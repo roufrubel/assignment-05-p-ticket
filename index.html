@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
     <!-- Custom css -->
     <style>
       .raleway-font {
@@ -104,9 +106,9 @@
           class="bg-[url(images/banner.png)] bg-no-repeat bg-cover w-auto h-auto md:h-[550px] lg:h-[550px]"
         >
           <div
-            class="flex flex-col justify-center items-center space-y-5 p-8 md:w-1/2 lg:w-1/2 text-center mx-auto h-full"
+            class="flex flex-col justify-center items-center space-y-5 p-8 md:w-3/3 lg:w-2/3 text-center mx-auto h-full"
           >
-            <h1 class="text-6xl font-extrabold text-white">
+            <h1 class="text-3xl lg:text-6xl font-extrabold text-white">
               End-to-End Travel with <br />
               <span class="primary-color">P Paribahan</span>
             </h1>
@@ -368,7 +370,7 @@
                     />
                   </svg>
                   <span class="text-[#1DD100] font-medium text-lg"
-                    >40 Seats Left</span
+                    ><span id="left-seats-num">40</span> Seats Left</span
                   >
                 </button>
               </div>
@@ -503,100 +505,100 @@
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">A</button>
-                <button class="btn px-8 py-2">A1</button>
-                <button class="btn px-8 py-2">A2</button>
-                <button class="btn px-8 py-2">A3</button>
-                <button class="btn px-8 py-2">A4</button>
+                <button class="btn px-8 py-2 seat">A1</button>
+                <button class="btn px-8 py-2 seat">A2</button>
+                <button class="btn px-8 py-2 seat">A3</button>
+                <button class="btn px-8 py-2 seat">A4</button>
               </div>
               <!-- B -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">B</button>
-                <button class="btn px-8 py-2">B1</button>
-                <button class="btn px-8 py-2">B2</button>
-                <button class="btn px-8 py-2">B3</button>
-                <button class="btn px-8 py-2">B4</button>
+                <button class="btn px-8 py-2 seat">B1</button>
+                <button class="btn px-8 py-2 seat">B2</button>
+                <button class="btn px-8 py-2 seat">B3</button>
+                <button class="btn px-8 py-2 seat">B4</button>
               </div>
               <!-- C -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">C</button>
-                <button class="btn px-8 py-2">C1</button>
-                <button class="btn px-8 py-2">C2</button>
-                <button class="btn px-8 py-2">C3</button>
-                <button class="btn px-8 py-2">C4</button>
+                <button class="btn px-8 py-2 seat">C1</button>
+                <button class="btn px-8 py-2 seat">C2</button>
+                <button class="btn px-8 py-2 seat">C3</button>
+                <button class="btn px-8 py-2 seat">C4</button>
               </div>
               <!-- D -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">D</button>
-                <button class="btn px-8 py-2">D1</button>
-                <button class="btn px-8 py-2">D2</button>
-                <button class="btn px-8 py-2">D3</button>
-                <button class="btn px-8 py-2">D4</button>
+                <button class="btn px-8 py-2 seat">D1</button>
+                <button class="btn px-8 py-2 seat">D2</button>
+                <button class="btn px-8 py-2 seat">D3</button>
+                <button class="btn px-8 py-2 seat">D4</button>
               </div>
               <!-- E -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">E</button>
-                <button class="btn px-8 py-2">E1</button>
-                <button class="btn px-8 py-2">E2</button>
-                <button class="btn px-8 py-2">E3</button>
-                <button class="btn px-8 py-2">E4</button>
+                <button class="btn px-8 py-2 seat">E1</button>
+                <button class="btn px-8 py-2 seat">E2</button>
+                <button class="btn px-8 py-2 seat">E3</button>
+                <button class="btn px-8 py-2 seat">E4</button>
               </div>
               <!-- F -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">F</button>
-                <button class="btn px-8 py-2">F1</button>
-                <button class="btn px-8 py-2">F2</button>
-                <button class="btn px-8 py-2">F3</button>
-                <button class="btn px-8 py-2">F4</button>
+                <button class="btn px-8 py-2 seat">F1</button>
+                <button class="btn px-8 py-2 seat">F2</button>
+                <button class="btn px-8 py-2 seat">F3</button>
+                <button class="btn px-8 py-2 seat">F4</button>
               </div>
               <!-- G -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">G</button>
-                <button class="btn px-8 py-2">G1</button>
-                <button class="btn px-8 py-2">G2</button>
-                <button class="btn px-8 py-2">G3</button>
-                <button class="btn px-8 py-2">G4</button>
+                <button class="btn px-8 py-2 seat">G1</button>
+                <button class="btn px-8 py-2 seat">G2</button>
+                <button class="btn px-8 py-2 seat">G3</button>
+                <button class="btn px-8 py-2 seat">G4</button>
               </div>
               <!-- H -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">H</button>
-                <button class="btn px-8 py-2">H1</button>
-                <button class="btn px-8 py-2">H2</button>
-                <button class="btn px-8 py-2">H3</button>
-                <button class="btn px-8 py-2">H4</button>
+                <button class="btn px-8 py-2 seat">H1</button>
+                <button class="btn px-8 py-2 seat">H2</button>
+                <button class="btn px-8 py-2 seat">H3</button>
+                <button class="btn px-8 py-2 seat">H4</button>
               </div>
               <!-- K -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">K</button>
-                <button class="btn px-8 py-2">K1</button>
-                <button class="btn px-8 py-2">K2</button>
-                <button class="btn px-8 py-2">K3</button>
-                <button class="btn px-8 py-2">K4</button>
+                <button class="btn px-8 py-2 seat">K1</button>
+                <button class="btn px-8 py-2 seat">K2</button>
+                <button class="btn px-8 py-2 seat">K3</button>
+                <button class="btn px-8 py-2 seat">K4</button>
               </div>
               <!-- L -->
               <div
                 class="flex justify-center gap-4 md:gap-10 lg:gap-10 my-6 w-full"
               >
                 <button class="px-8 py-2 bg-white">L</button>
-                <button class="btn px-8 py-2">L1</button>
-                <button class="btn px-8 py-2">L2</button>
-                <button class="btn px-8 py-2">L3</button>
-                <button class="btn px-8 py-2">L4</button>
+                <button class="btn px-8 py-2 seat">L1</button>
+                <button class="btn px-8 py-2 seat">L2</button>
+                <button class="btn px-8 py-2 seat">L3</button>
+                <button class="btn px-8 py-2 seat">L4</button>
               </div>
             </div>
           </div>
@@ -616,26 +618,25 @@
               >
                 <p class="font-medium text-lg">
                   Seat
-                  <span class="bg-[#1DD100] text-white px-2 rounded-sm">2</span>
+                  <span
+                    class="bg-[#1DD100] text-white px-2 rounded-sm"
+                    id="selected-seat-num"
+                    >0</span
+                  >
                 </p>
                 <p class="font-medium text-lg">Class</p>
                 <p class="font-medium text-lg">Price</p>
               </div>
-              <div class="flex justify-between items-center mt-4 mb-4">
-                <p>C2</p>
-                <p>Economy</p>
-                <p>550</p>
-              </div>
-              <div class="flex justify-between items-center mb-4">
-                <p>C2</p>
-                <p>Economy</p>
-                <p>550</p>
-              </div>
+              <!-- add selected seat name list -->
+              <div id="selected-seat-name-list"></div>
+
               <div
                 class="flex justify-between items-center border-t-2 border-[#03071233] pt-4 mb-4"
               >
                 <p class="font-medium text-lg">Total Price</p>
-                <p class="font-medium text-lg">BDT 1100</p>
+                <p id="total-price" class="font-medium text-lg">
+                  BDT <span id="total-price">0</span>
+                </p>
               </div>
               <div
                 class="bg-white rounded-xl p-2 flex justify-between items-center"
@@ -654,7 +655,9 @@
               </div>
               <div class="flex justify-between items-center mt-4">
                 <p class="font-medium text-lg">Grand Total</p>
-                <p class="font-medium text-lg">BDT 1100</p>
+                <p class="font-medium text-lg">
+                  BDT <span id="grand-total">0</span>
+                </p>
               </div>
             </div>
             <!-- 2nd part -->
@@ -773,5 +776,8 @@
         </a>
       </nav>
     </footer>
+
+    <!-- Javascript file linked -->
+    <script src="app.js"></script>
   </body>
 </html>
